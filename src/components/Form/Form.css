@@ -1,0 +1,29 @@
+form {
+    display: flexl; align-content: center;
+}
+form > div {
+ display: flex; justify-content: center;
+}
+input {
+    border-radius: 20px !important; border: none !important;
+    background: #000 !important; color: #ccc!important;
+    transition: .4s ease !important; font-weight: 600 !important;
+}
+input:focus {
+    box-shadow: none !important;
+    border: none !important;
+    background: #ccc !important; color: black !important;
+    font-weight: 600 !important;
+}
+input:required {
+    box-shadow: none;
+}
+.btn {
+    margin: 1rem .5rem;
+    min-width: 100px !important;
+    background-color: #790e43 !important;
+    color: #ccc !important; border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) !important;
+    outline: none;
+  }

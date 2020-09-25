@@ -1,25 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import { TaskState } from './context/TaskState';
+import Form from './components/Form/Form';
+import Tasks from './components/Tasks/Tasks';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TaskState>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6">
+            <div className="card">
+
+              <div className="card-header">
+                <h1>#To Do</h1>
+              </div>
+              <div className="card-body">
+                < Form />
+              </div>
+              <div className="card-footer">
+                < Tasks />
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </TaskState>
   );
 }
 
