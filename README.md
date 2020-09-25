@@ -1,5 +1,5 @@
 # To Do List
-A small app builted with react.
+A small to do app builted with react context.
 
 # Built With
 
